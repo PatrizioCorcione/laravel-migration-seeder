@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->boolean('removed')->after('slug');
+            $table->boolean('removed')->default(false)->after('slug');
         });
     }
 

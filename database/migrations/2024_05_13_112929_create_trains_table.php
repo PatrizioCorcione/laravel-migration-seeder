@@ -20,8 +20,8 @@ return new class extends Migration
             $table->time('time_departure');
             $table->time('time_arrival');
             $table->string('train_code', 10);
-            $table->tinyInteger('carriage_number');
-            $table->boolean('in_time');
+            $table->tinyInteger('carriage_number')->nullable();
+            $table->boolean('in_time')->default(true);
             $table->timestamps();
         });
     }
