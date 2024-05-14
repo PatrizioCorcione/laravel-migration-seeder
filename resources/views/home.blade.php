@@ -1,8 +1,8 @@
 @extends('layout.main')
 
 @section('content')
-    <div class="container">
-        <table class="table">
+    <div class="container my-4">
+        <table class="table home bg-body-secondary ">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
